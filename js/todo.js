@@ -11,8 +11,9 @@ function saveToDos() {
 
 function deleteToDo(event) {
   const li = event.target.parentElement;
-  console.log(li.id);
   li.remove();
+  toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id));
+  saveToDos();
 }
 
 function paintToDo(newTodo) {
@@ -51,10 +52,8 @@ if (savedToDos !== null) {
   parsedToDos.forEach(paintToDo);
 }
 
-paintToDo({ text: "a", id: 1212312 });
-
 /*
 - add todo list items when entered
 - save todo list items in Local Storage when refreshed
-- delete todo list items
+- delete todo items
 */
