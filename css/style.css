@@ -1,3 +1,56 @@
 .hidden {
   display: none;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+}
+
+#clock {
+  font-size: 1050%;
+  font-weight: 500;
+  margin-bottom: -0.3em;
+}
+
+#greeting {
+  font-size: 3.375rem;
+}
+
+input {
+  box-sizing: border-box;
+  width: 350px;
+  height: 50px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid rgb(255, 250, 250);
+  font-size: large;
+  padding-left: 10px;
+}
+input:focus {
+  outline: none;
+}
+
+#todo-list {
+}
+
+#quote {
+  font-size: 1.125rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 110px;
+}
+
+#weather {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
