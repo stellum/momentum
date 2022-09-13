@@ -1,3 +1,11 @@
+html,
+body,
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .hidden {
   display: none;
 }
@@ -53,4 +61,13 @@ input:focus {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+
+#background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
 }
